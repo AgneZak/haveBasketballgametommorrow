@@ -1,0 +1,181 @@
+*{
+    font-family: Helvetica,sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+}
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: maroon;
+    height: 700px;
+}
+
+.back {
+    background-image: url("https://image.shutterstock.com/image-vector/versus-screen-design-battle-headline-260nw-1112416277.jpg");
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 1400px;
+    position: absolute;
+    top: 0;
+}
+
+.date-info {
+    display: flex;
+    color: aliceblue;
+    z-index: 1;
+    font-weight: bolder;
+    font-size: x-large;
+
+}
+.date-info p {
+    margin-right: 10px;
+
+}
+.index-h2{
+    z-index: 1;
+    color: aliceblue;
+    font-size: 30px;
+}
+.teams{
+    z-index: 1;
+    display: flex;
+}
+.team-p {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 150px 0px 150px;
+    align-items: center;
+
+}
+.team-logo{
+    width: 200px;
+}
+.score {
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 1;
+}
+/* ----------------------
+             nav
+-------------------------*/
+
+nav{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    z-index: 2;
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: midnightblue;
+}
+
+.active {
+    background-color: maroon;
+}
+/*------------------------
+
+About page
+
+-------------------------- */
+.about {
+    background-color: maroon;
+}
+
+.team-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid tomato;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+.team-info p,
+.team-info h2,
+.team-info h3,
+.team-info h4,
+.team-info img{
+    margin: 10px;
+    color: tomato;
+}
+.team-info h2,
+.team-info h3,
+.team-info h4{
+    color: lightgray;
+}
+.team-info img{
+    width: 150px;
+    border-radius: 20px;
+}
+
+/*------------------------
+
+Contact page
+
+-------------------------- */
+
+.contact {
+    background-color: maroon;
+}
+.contact section{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    margin: auto;
+}
+form input,
+form textarea{
+    padding: 10px;
+    margin: 5px;
+}
+textarea{
+    resize: none;
+    overflow: scroll;
+}
+.sms{
+    color: tomato;
+}
