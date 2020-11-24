@@ -10,13 +10,7 @@ require 'functions.php';
     <title>Konsultacijos</title>
 </head>
 <body>
-<nav>
-    <ul>
-        <?php foreach ($nav['links'] as $name => $link): ?>
-            <li><a href="<?php print $link ?>"><?php print $name ?></a></li>
-        <?php endforeach; ?>
-    </ul>
-</nav>
+<?php require 'navigation.php';?>
     <section class="banner">
         <div class="date-info">
             <p><?php print $match['date']; ?></p>

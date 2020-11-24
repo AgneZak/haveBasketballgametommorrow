@@ -10,13 +10,7 @@ require 'functions.php';
     <title>About</title>
 </head>
 <body class="about">
-<nav>
-    <ul>
-        <?php foreach ($nav['links'] as $name => $link): ?>
-            <li><a href="<?php print $link ?>"><?php print $name ?></a></li>
-        <?php endforeach; ?>
-    </ul>
-</nav>
+<?php require 'navigation.php';?>
 <main>
     <?php foreach ($match['teams'] as $team): ?>
         <section class="team-info">

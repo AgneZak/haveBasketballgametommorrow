@@ -179,3 +179,24 @@ textarea{
 .sms{
     color: tomato;
 }
+
+
+
+.team-statistics{
+    display: flex;
+    flex-wrap: wrap;
+}
+.team-statistics div {
+    margin: 10px;
+}
+.border{
+    border: 1px solid grey;
+}
+.table-head{
+    display: flex;
+    justify-content: space-around;
+}
+.tables{
+    display: flex;
+    justify-content: center;
+}

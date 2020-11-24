@@ -311,10 +311,3 @@ define('LOCATIONS',[
     'Portugal',
     'Praha'
 ]);
-$nav = [
-    'links' => [
-        'Home' => 'index.php',
-        'About' => 'about.php',
-        'Contact us' => 'contact.php',
-    ]
-];

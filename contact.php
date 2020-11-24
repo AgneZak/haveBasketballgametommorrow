@@ -19,13 +19,7 @@ foreach ($zinute as $tekstas){
     <title>Contact us</title>
 </head>
 <body class="contact">
-<nav>
-    <ul>
-        <?php foreach ($nav['links'] as $name => $link): ?>
-            <li><a href="<?php print $link ?>"><?php print $name ?></a></li>
-        <?php endforeach; ?>
-    </ul>
-</nav>
+<?php require 'navigation.php';?>
 <section>
     <h1>Siuskite mums zinute</h1>
     <form method="post">
