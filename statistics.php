@@ -37,7 +37,7 @@ foreach ($matches as $teams) {
     </nav>
 </header>
 <main>
-    <section class="team-statistics">
+    <section class="team-statistics team-info">
         <h2 id="komandos">Komandos</h2>
         <?php foreach ($matches as $match): ?>
             <?php foreach ($match['teams'] as $team): ?>
@@ -56,7 +56,7 @@ foreach ($matches as $teams) {
             <?php endforeach; ?>
         <?php endforeach; ?>
     </section>
-    <section class="team-matches">
+    <section class="team-matches team-info">
         <h2 id="rungtynes">Rungtynes</h2>
         <?php foreach ($matches as $match): ?>
             <div class="border">
@@ -71,7 +71,7 @@ foreach ($matches as $teams) {
             </div>
         <?php endforeach; ?>
     </section>
-    <section class="team-matches">
+    <section class="team-matches team-info">
         <h2 id="taskai">Tasku lenteles</h2>
         <?php foreach ($past_matches as $match): ?>
             <div class="border table-head">
@@ -107,7 +107,7 @@ foreach ($matches as $teams) {
     </section>
     <section class="team-info">
         <h2 id="info">Bendra informacija</h2>
-        <div>
+        <div class="border">
             <p>Is viso komandu zaidzia <?php print count_teams($matches); ?></p>
             <p>Is viso zaidzia zaideju <?php print $count_all_teams_players; ?></p>
             <p>Vidutinis zaideju skaicius <?php print $average; ?></p>
